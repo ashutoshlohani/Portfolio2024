@@ -21,12 +21,12 @@ const About = () => (
 
          <div className='flex basis-1/2 justify-center items-center'>
             <div className=' flex justify-center mb-8 sm:mb-0 sm:p-8 lg:p-0 h-[14rem] sm:h-[100%] w-full sm:w-[100%] lg:w-[80%] xl:w-[75%]'>
-               <img
+               {/* <img
                   src={profilePicture}
                   alt='Ashutosh Lohani'
                   className='object-cover rounded-md max-h-[100%]'
                   width={'100%'}
-               />
+               /> */}
             </div>
          </div>
       </div>

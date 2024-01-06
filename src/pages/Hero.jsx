@@ -6,7 +6,7 @@ import { HeroText } from '../components';
 
 const Hero = () => {
    return (
-      <section className='h-screen mx-6 sm:mx-14 lg:mx-28 relative' id='/'>
+      <section className='h-[80vh] md:h-screen mx-6 sm:mx-14 lg:mx-28 relative' id='/'>
          <div className='flex items-center justify-center h-full'>
             <HeroText />
          </div>

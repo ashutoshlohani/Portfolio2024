@@ -4,9 +4,9 @@ const About = () => (
    <section className='bg-dark text-light gap-10'>
       <div
          id='about'
-         className='py-[8rem] lg:py-[14rem] flex flex-col-reverse sm:flex-row mx-6 sm:mx-14 lg:mx-28'>
+         className='py-[5rem] lg:py-[14rem] flex flex-col-reverse sm:flex-row mx-6 sm:mx-14 lg:mx-28'>
          <div className='basis-1/2'>
-            <p className='text-[1.2rem] lg:text-[2rem] xl:text-[2.5rem]'>
+            <p className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem]'>
                {`ヽ(•‿•)`} <span className='waving-hand'>{`ﾉ`}</span>
             </p>
             <h1 className='text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-tight mt-4 mb-8 lg:my-8 xl:mb-14 xl:mt-8'>
@@ -20,7 +20,7 @@ const About = () => (
          </div>
 
          <div className='flex basis-1/2 justify-center items-center'>
-            <div className='flex justify-center mb-8 sm:mb-0 sm:p-8 lg:p-0 h-[14rem] sm:h-[100%] w-full sm:w-[100%] lg:w-[80%] xl:w-[75%]'>
+            <div className='flex justify-center mb-10 sm:mb-0 sm:p-8 lg:p-0 h-[14rem] sm:h-[100%] w-full sm:w-[100%] lg:w-[80%] xl:w-[75%]'>
                <img
                   src={profilePicture}
                   alt='Ashutosh Lohani'
@@ -31,9 +31,9 @@ const About = () => (
          </div>
       </div>
 
-      <div className='gap-10 flex flex-col sm:flex-row pb-[8rem] lg:pb-[4rem] lg:pt-[8rem] mx-6 sm:mx-14 lg:mx-28'>
+      <div className='gap-10 flex flex-col sm:flex-row pb-[4rem] lg:pb-[4rem] lg:pt-[8rem] mx-6 sm:mx-14 lg:mx-28'>
          <div className='basis-1/2'>
-            <h1 className='text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-none mb-8'>
+            <h1 className='flex flex-row text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-none mb-8'>
                {`Development`}
             </h1>
             <p className='font-light text-base lg:text-[1rem] xl:text-[1.4rem] w-[100%] leading-relaxed'>

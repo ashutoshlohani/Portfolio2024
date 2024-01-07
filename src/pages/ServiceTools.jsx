@@ -51,7 +51,7 @@ function ServiceTools() {
                <path fill='#202020' fillOpacity='1' d={svgPath}></path>
             </svg>
             <div className='relative top-[-4rem] sm:top-[-7rem] md:top-[-8rem] lg:top-[-10rem] xl:top-[-15rem]'>
-               <h1 className=' text-dark text-[5.5rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem]  xl:text-[22rem] font-bold text-center overflow-hidden'>
+               <h1 className=' text-dark text-[5.7rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem]  xl:text-[22rem] font-bold text-center overflow-hidden'>
                   Toolbox
                </h1>
                <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-16'>
@@ -126,7 +126,7 @@ function ServiceTools() {
                                  alt={name}
                                  className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem]'
                               />
-                              <p className='text-[0.5rem] xl:text-[0.8rem] mt-2 xl:mt-5 font-light opacity-50'>
+                              <p className='text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-50'>
                                  {name}
                               </p>
                            </div>
@@ -141,7 +141,7 @@ function ServiceTools() {
                                  alt={name}
                                  className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem]'
                               />
-                              <p className='text-[0.5rem] xl:text-[0.8rem] mt-2 xl:mt-5 font-light opacity-50'>
+                              <p className='text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-50'>
                                  {name}
                               </p>
                            </div>

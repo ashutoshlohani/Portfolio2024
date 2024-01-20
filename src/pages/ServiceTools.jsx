@@ -14,6 +14,7 @@ import sass from '../assets/sass.svg';
 import tailwind from '../assets/tailwindcss-icon.svg';
 import three from '../assets/threejs.svg';
 
+// eslint-disable-next-line react/prop-types
 const ServiceItem = ({ icon, title, content }) => (
    <div className='flex flex-col align-top mb-16 basis-1/2'>
       {icon && React.cloneElement(icon, { className: 'text-[1.5rem] mb-2 opacity-40' })}
@@ -46,22 +47,26 @@ function ServiceTools() {
 
    return (
       <>
-         <section style={{ background: 'rgba(32, 32, 32, 0.95)' }} className='text-light'>
+         <section
+            style={{
+               background: 'linear-gradient(to bottom, rgba(32, 32, 32, 0.95), #202020)',
+            }}
+            className='text-light'>
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
                <path fill='#202020' fillOpacity='1' d={svgPath}></path>
             </svg>
             <div className='relative top-[-4rem] sm:top-[-7rem] md:top-[-8rem] lg:top-[-10rem] xl:top-[-15rem]'>
-               <h1 className=' text-dark text-[5.7rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem]  xl:text-[22rem] font-bold text-center overflow-hidden'>
+               <h1 className=' text-dark text-[5.7rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-bold text-center overflow-hidden'>
                   Toolbox
                </h1>
-               <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-16'>
+               <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-20'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
                   {`Here's how can `}
                   <br className='sm:hidden' />
                   {`I help you :)`}
                </p>
 
-               <div className='flex flex-col align-top mx-6 sm:mx-14 lg:mx-28'>
+               <div className='flex flex-col xl:flex-row align-top mx-6 sm:mx-14 lg:mx-28'>
                   <div className='flex basis-1/2 flex-col md:flex-row sm:gap-8'>
                      <ServiceItem
                         icon={<CgWebsite />}
@@ -83,7 +88,7 @@ function ServiceTools() {
                               <p>Design / refactor UI.</p>
                               <p>Responsive Web Design.</p>
                               <p>Interactive Landing Page.</p>
-                              <p>Web Animation and Micro-interactions.</p>
+                              <p>Web Animation and Micro interactions.</p>
                            </>
                         }
                      />

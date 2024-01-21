@@ -36,14 +36,19 @@ const projects = [
    },
 ];
 function Projects() {
+   const svgPath =
+      'M0,96L120,133.3C240,171,480,245,720,245.3C960,245,1200,171,1320,133.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z';
    return (
       <section
          id='projects'
          className='bg-dark text-light'
          style={{
-            background: 'linear-gradient(to bottom, #000000, #000000)',
-            // background: 'linear-gradient(to bottom, #202020, #000000)',
+            // background: 'linear-gradient(to bottom, #000000, #000000)',
+            background: 'linear-gradient(to top, #202020, #101010)',
          }}>
+         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+            <path fill='#202020' fillOpacity='1' d={svgPath}></path>
+         </svg>
          <div className='mx-6 sm:mx-14 lg:mx-28'>
             <div className='flex flex-col sm:flex-row justify-between items-center py-16 gap-10'>
                <div className='text-[3rem] lg:text-[5rem] leading-none'>
@@ -64,7 +69,7 @@ function Projects() {
                {projects.map((project, index) => (
                   <div key={index} className='w-full sm:w-1/2'>
                      <div
-                        className='h-fit rounded text-light bg-cover bg-center bg-no-repeat my-4 mx-0 sm:mx-4'
+                        className='h-fit rounded text-light bg-cover bg-center bg-no-repeat my-8 sm:my-4 mx-0 sm:mx-4 '
                         // className='h-fit rounded text-light bg-cover bg-center bg-no-repeat'
                         style={{ backgroundImage: `url(${project.image})` }}>
                         <div className='bg-black bg-opacity-60 hover:bg-opacity-75 rounded flex flex-col justify-between'>
@@ -79,7 +84,7 @@ function Projects() {
                               <p className='text-[2.5rem] lg:text-[3rem] font-semibold my-4'>
                                  {project.projectName}
                               </p>
-                              <p className='text-[0.8rem] sm:text-[1rem] font-light lg:font-normal mb-4 opacity-90'>
+                              <p className='text-[0.9rem] sm:text-[1rem] font-light lg:font-normal mb-4 opacity-90'>
                                  {project.description}
                               </p>
 

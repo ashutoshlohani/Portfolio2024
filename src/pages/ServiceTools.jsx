@@ -56,7 +56,7 @@ function ServiceTools() {
                <path fill='#202020' fillOpacity='1' d={svgPath}></path>
             </svg>
             <div className='relative top-[-4rem] sm:top-[-7rem] md:top-[-8rem] lg:top-[-10rem] xl:top-[-15rem]'>
-               <h1 className=' text-dark text-[5.7rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-bold text-center overflow-hidden'>
+               <h1 className=' text-dark text-[6rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden'>
                   Toolbox
                </h1>
                <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-20'>

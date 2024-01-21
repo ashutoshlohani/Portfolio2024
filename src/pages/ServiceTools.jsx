@@ -62,7 +62,7 @@ function ServiceTools() {
                <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-20'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
                   {`Here's how can `}
-                  <br className='sm:hidden' />
+                  {/* <br className='sm:hidden' /> */}
                   {`I help you :)`}
                </p>
 

@@ -46,11 +46,11 @@ function Projects() {
             // background: 'linear-gradient(to bottom, #000000, #000000)',
             background: 'linear-gradient(to top, #202020, #101010)',
          }}>
-         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className='sm:hidden'>
             <path fill='#202020' fillOpacity='1' d={svgPath}></path>
          </svg>
-         <div className='mx-6 sm:mx-14 lg:mx-28'>
-            <div className='flex flex-col sm:flex-row justify-between items-center py-16 gap-10'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 pt-[1rem]'>
+            <div className='flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-16 gap-10'>
                <div className='text-[3rem] lg:text-[5rem] leading-none'>
                   <GoArrowDownRight className='text-[2rem] mb-2 hidden sm:block' />
                   Projects

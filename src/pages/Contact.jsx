@@ -14,17 +14,17 @@ function Contact() {
          {/* <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
             <path fill='#000000' fillOpacity='1' d={svgPath}></path>
          </svg> */}
-         <div className='mx-6 sm:mx-14 lg:mx-28 py-[8rem]'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 py-[6rem]'>
             <div className='flex flex-wrap justify-between items-start'>
                <div className=' leading-tight'>
-                  <p className='text-[1.2rem] lg:text-[3rem]'>Have an awesome idea?</p>
-                  <p className='text-[2.2rem] lg:text-[5rem]'>{"Let's work together."}</p>
+                  <p className='text-[1.5rem] lg:text-[3rem]'>Have an awesome idea?</p>
+                  <p className='text-[2.5rem] lg:text-[5rem]'>{"Let's work together."}</p>
                </div>
 
                <div>
                   <button
                      type='button'
-                     className='font-normal border rounded-full text-[0.8rem] sm:text-[1rem] px-10 py-2.5 text-center inline-flex items-center me-2 my-[2rem] sm:my-0'>
+                     className='font-normal border rounded-full text-[0.8rem] sm:text-[1rem] px-10 py-2.5 text-center inline-flex items-center me-2 mt-[2.5rem] mb-[1rem] sm:my-0'>
                      <FaFileDownload className='me-2' />
                      Resume
                   </button>

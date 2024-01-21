@@ -15,8 +15,7 @@ const projects = [
    },
    {
       projectName: 'InnerScore',
-      description:
-         'An online shopping platform developed using MERN stack (MongoDB, Express.js, React, Node.js).',
+      description: 'An online shopping platform developed using MERN stack (React, Node.js).',
       technology: ['React', 'Node.js'],
       image: project2,
    },
@@ -30,7 +29,7 @@ const projects = [
    {
       projectName: 'Fcuk****',
       description:
-         'A task management tool with features like adding tasks, marking them as completed, and deleting tasks.',
+         'A task management tool with features like adding tasks, marking them as completed, deleting tasks.',
       technology: ['Vue.js', 'Firebase', 'CSS'],
       image: project4,
    },
@@ -55,17 +54,17 @@ function Projects() {
                   <GoArrowDownRight className='text-[2rem] mb-2 hidden sm:block' />
                   Projects
                </div>
-               <div className='flex flex-col items-end'>
-                  <p className='text-[1rem] sm:text-[1.2rem] text-right'>
+               <div className='flex flex-col items-end opacity-70'>
+                  <p className='text-[1rem] lg:text-[1.2rem] text-right'>
                      Code is like humor. when you
                      <br></br>
                      “have” to explain it, it’s bad.
                   </p>
-                  <p className='text-[0.8rem] sm:text-[1rem] font-extralight'>-Cory House</p>
+                  <p className='text-[0.8rem] lg:text-[1rem] font-extralight'>-Cory House</p>
                </div>
             </div>
 
-            <div className='flex flex-wrap py-[2rem] lg:py-[8rem]'>
+            <div className='flex flex-wrap py-[4rem] lg:py-[8rem]'>
                {projects.map((project, index) => (
                   <div key={index} className='w-full sm:w-1/2'>
                      <div
@@ -73,7 +72,7 @@ function Projects() {
                         // className='h-fit rounded text-light bg-cover bg-center bg-no-repeat'
                         style={{ backgroundImage: `url(${project.image})` }}>
                         <div className='bg-black bg-opacity-60 hover:bg-opacity-75 rounded flex flex-col justify-between'>
-                           <div className='flex flex-col justify-center items-center gap-2 py-[4rem] lg:py-[8rem]'>
+                           <div className='flex flex-col justify-center items-center gap-2 py-[4rem] xl:py-[8rem]'>
                               <PiEyeClosedLight className='text-[2rem] cursor-pointer' />
                               <p className='text-[0.8rem] font-normal hidden sm:block'>
                                  View Project
@@ -81,7 +80,7 @@ function Projects() {
                            </div>
 
                            <div className='p-4 lg:p-8'>
-                              <p className='text-[2.5rem] lg:text-[3rem] font-semibold my-4'>
+                              <p className='text-[2.5rem] lg:text-[3rem] font-bold my-4'>
                                  {project.projectName}
                               </p>
                               <p className='text-[0.9rem] sm:text-[1rem] font-light lg:font-normal mb-4 opacity-90'>

@@ -15,29 +15,31 @@ function Contact() {
             <path fill='#000000' fillOpacity='1' d={svgPath}></path>
          </svg> */}
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[6rem]'>
-            <div className='flex flex-wrap justify-between items-start'>
+            <div className='flex flex-wrap justify-between items-start md:gap-16'>
                <div className=' leading-tight'>
-                  <p className='text-[1.5rem] lg:text-[3rem]'>Have an awesome idea?</p>
-                  <p className='text-[2.5rem] lg:text-[5rem]'>{"Let's work together."}</p>
+                  <p className='text-[1.5rem] opacity-60 md:text-[2rem] lg:text-[3rem]'>
+                     Have an awesome idea?
+                  </p>
+                  <p className='text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-medium'>
+                     {"Let's work together."}
+                  </p>
                </div>
 
-               <div>
-                  <button
-                     type='button'
-                     className='font-normal border rounded-full text-[0.8rem] sm:text-[1rem] px-10 py-2.5 text-center inline-flex items-center me-2 mt-[2.5rem] mb-[1rem] sm:my-0'>
-                     <FaFileDownload className='me-2' />
-                     Resume
-                  </button>
-               </div>
+               <button
+                  type='button'
+                  className='font-normal border rounded-full text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] px-8 py-2 text-center inline-flex items-center font-mono me-2 mt-[2.5rem] mb-[1rem] sm:my-0'>
+                  <FaFileDownload className='me-2' />
+                  Resume
+               </button>
             </div>
 
-            <p className='text-[1rem] lg:text-[1.4rem] font-light md:my-[4rem] xl:w-[50%]'>
+            <p className='text-[1rem] lg:text-[1.4rem] font-light md:my-[2rem] lg:w-[70%]'>
                I am looking for freelance or full-time opportunities in startups, dev firms, and
                product base companies.
             </p>
 
             <hr className='mt-[4rem] lg:mt-[10rem]' />
-            <p className='text-center text-[1.4rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[6rem] overflow-hidden py-2'>
+            <p className='text-center text-[1.4rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.8rem] xl:text-[6rem] overflow-hidden py-2'>
                aashutosh.lohaani@gmail.com
             </p>
             <hr />

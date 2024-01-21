@@ -7,9 +7,9 @@ import byMe from '../assets/d&dbyme.svg';
 function Footer() {
    return (
       <section id='contact' className='bg-[#101010] text-light'>
-         <div className='mx-6 sm:mx-14 lg:mx-28 pt-[5rem] pb-[3rem]'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 py-[4rem]'>
             <div className='flex flex-wrap justify-between items-end'>
-               <div className='w-[30%] md:w-[25%]'>
+               <div className='w-[30%] md:w-[25%] lg:w-[20%]'>
                   <img src={thankyouText} />
                </div>
                {/* <p>2024</p> */}
@@ -19,7 +19,7 @@ function Footer() {
                      <FaGithub />
                      <FaDribbble />
                   </div>
-                  <img src={byMe} className='hidden sm:block w-[70%]' />
+                  <img src={byMe} className='hidden sm:block w-[80%]' />
                </div>
             </div>
             <div className='mt-[5rem] mx-[4rem] sm:hidden'>

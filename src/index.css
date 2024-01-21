@@ -5,14 +5,13 @@
 @tailwind utilities;
 
 :root {
-   font-family: DM Sans, Pacifico, sans-serif;
-   /* letter-spacing: -0.66px; */
+   font-family:
+      DM Sans,
+      sans-serif;
+   /* letter-spacing: -0.5px; */
    background-color: #fffcf2;
    color: #202020;
    text-rendering: optimizeLegibility;
-   -webkit-font-smoothing: antialiased;
-   /* overscroll-behavior: none; */
-   /* overflow: hidden; */
 }
 
 @keyframes wave {

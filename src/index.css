@@ -60,3 +60,36 @@
    display: inline-block;
    animation: wave 1.5s infinite;
 }
+
+.menu-container {
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #f8f8f8; /* Set your desired background color */
+   z-index: 10;
+   animation: slideInRight 0.5s ease-in-out;
+}
+
+.menu-container.closing {
+   animation: slideOutRight 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+   from {
+      transform: translateX(100%);
+   }
+   to {
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideOutRight {
+   from {
+      transform: translateX(0);
+   }
+   to {
+      transform: translateX(100%);
+   }
+}

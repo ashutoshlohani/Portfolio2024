@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { GoArrowDownRight } from 'react-icons/go';
 import { PiEyeClosedLight } from 'react-icons/pi';
 import project1 from '../assets/project1.png';
@@ -15,7 +16,8 @@ const projects = [
    },
    {
       projectName: 'InnerScore',
-      description: 'An online shopping platform developed using MERN stack (React, Node.js).',
+      description:
+         'An online shopping platform developed using MERN stack (React, Node.js, MongoDB).',
       technology: ['React', 'Node.js'],
       image: project2,
    },
@@ -35,6 +37,16 @@ const projects = [
    },
 ];
 function Projects() {
+   const [isModalOpen, setModalOpen] = useState(false);
+
+   const openModal = () => {
+      setModalOpen(true);
+   };
+
+   const closeModal = () => {
+      setModalOpen(false);
+   };
+
    const svgPath =
       'M0,96L120,133.3C240,171,480,245,720,245.3C960,245,1200,171,1320,133.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z';
    return (
@@ -73,7 +85,10 @@ function Projects() {
                         style={{ backgroundImage: `url(${project.image})` }}>
                         <div className='bg-black bg-opacity-60 hover:bg-opacity-75 rounded flex flex-col justify-between'>
                            <div className='flex flex-col justify-center items-center gap-2 py-[4rem] xl:py-[8rem]'>
-                              <PiEyeClosedLight className='text-[2rem] cursor-pointer' />
+                              <PiEyeClosedLight
+                                 className='text-[2rem] cursor-pointer'
+                                 onClick={openModal}
+                              />
                               <p className='text-[0.8rem] font-normal hidden sm:block'>
                                  View Project
                               </p>
@@ -103,6 +118,23 @@ function Projects() {
                ))}
             </div>
          </div>
+         {isModalOpen && (
+            <div className='fixed inset-0 overflow-y-auto flex items-center justify-center'>
+               <div className='absolute inset-0 bg-black opacity-50'></div>
+
+               <div className='z-50 bg-white text-dark p-6 rounded-lg shadow-xl'>
+                  <h1 className='text-2xl mb-4'>Project Name</h1>
+                  <p>This is the description.</p>
+
+                  {/* Button to close the modal */}
+                  <button
+                     className='mt-4 bg-red-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+                     onClick={closeModal}>
+                     Close Modal
+                  </button>
+               </div>
+            </div>
+         )}
       </section>
    );
 }

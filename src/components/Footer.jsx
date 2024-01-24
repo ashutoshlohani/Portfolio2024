@@ -3,7 +3,6 @@ import { FaDribbble } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import byMe from '../assets/d&dbyme.svg';
-// import AnimatedSphere from './anime/anime';
 
 function Footer() {
    return (
@@ -20,19 +19,18 @@ function Footer() {
                         href='https://www.linkedin.com/in/ashutosh-lohani/'
                         target='_blank'
                         rel='noreferrer'>
-                        <FaLinkedin className='hover:text-[#0077b5]' />
+                        <FaLinkedin className='hover:opacity-75' />
                      </a>
                      <a href='https://github.com/ashutoshlohani' target='_blank' rel='noreferrer'>
-                        <FaGithub className='hover:text-[#909090]' />
+                        <FaGithub className='hover:opacity-75' />
                      </a>
                      <a href='https://dribbble.com/oaashu' target='_blank' rel='noreferrer'>
-                        <FaDribbble className='hover:text-[#E8538D]' />
+                        <FaDribbble className='hover:opacity-75' />
                      </a>
                   </div>
                   <img src={byMe} className='hidden sm:block w-[75%]' />
                </div>
             </div>
-            {/* <AnimatedSphere /> */}
 
             <div className='mt-[5rem] mx-[4rem] sm:hidden'>
                <img src={byMe} />

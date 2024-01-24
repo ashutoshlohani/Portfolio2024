@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { BsCodeSlash } from 'react-icons/bs';
-import '../components/button/button.scss';
 
 function Navbar() {
    useEffect(() => {
@@ -22,13 +21,12 @@ function Navbar() {
          link.addEventListener('click', handleSmoothScroll);
       });
 
-      // Cleanup event listeners on unmount
       return () => {
          links.forEach(link => {
             link.removeEventListener('click', handleSmoothScroll);
          });
       };
-   }, []); // Empty dependency array ensures that the effect runs only once on mount
+   }, []);
 
    const navLinks = [
       { href: '/about', text: 'About' },
@@ -58,7 +56,9 @@ function Navbar() {
                   </div>
                </div>
 
-               <button className='md:hidden text-lg'>Mail💌</button>
+               <button className='md:hidden text-lg'>
+                  <a href='mailto:aashutosh.lohaani@gmail.com'>Mail💌</a>
+               </button>
 
                <div className='hidden w-full md:block md:w-auto'>
                   <ul className='flex gap-16 text-lg font-normal'>

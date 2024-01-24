@@ -13,7 +13,6 @@ import redux from '../assets/redux.svg';
 import sass from '../assets/sass.svg';
 import tailwind from '../assets/tailwindcss-icon.svg';
 import three from '../assets/threejs.svg';
-// import AnimatedSphere from '../components/anime/anime';
 
 // eslint-disable-next-line react/prop-types
 const ServiceItem = ({ icon, title, content }) => (
@@ -63,7 +62,6 @@ function ServiceTools() {
                <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-20'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
                   {`Here's how can `}
-                  {/* <br className='sm:hidden' /> */}
                   {`I help you :)`}
                </p>
 
@@ -155,7 +153,6 @@ function ServiceTools() {
                      </div>
                   </div>
                </div>
-               {/* <AnimatedSphere /> */}
             </div>
          </section>
       </>
@@ -163,9 +160,3 @@ function ServiceTools() {
 }
 
 export default ServiceTools;
-
-{
-   /* <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-      <path fill='rgba(32, 32, 32, 0.95)' fillOpacity='1' d={svgPath}></path>
-   </svg> */
-}

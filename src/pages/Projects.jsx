@@ -155,7 +155,7 @@ function Projects() {
                         onClick={() => openModal(index)}
                         className='cursor-pointer h-fit rounded text-light bg-cover bg-center bg-no-repeat my-8 sm:my-4 mx-0 sm:mx-4 '
                         style={{ backgroundImage: `url(${project.image})` }}>
-                        <div className='bg-black bg-opacity-65 hover:bg-opacity-50 rounded flex flex-col justify-between'>
+                        <div className='bg-black bg-opacity-50 hover:bg-opacity-65 rounded flex flex-col justify-between'>
                            <div className='flex flex-col justify-center items-center gap-2 py-[4rem] xl:py-[8rem]'>
                               <PiEyeClosedLight className='text-[2rem]' />
                            </div>

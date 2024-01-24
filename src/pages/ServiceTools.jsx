@@ -13,6 +13,7 @@ import redux from '../assets/redux.svg';
 import sass from '../assets/sass.svg';
 import tailwind from '../assets/tailwindcss-icon.svg';
 import three from '../assets/threejs.svg';
+// import AnimatedSphere from '../components/anime/anime';
 
 // eslint-disable-next-line react/prop-types
 const ServiceItem = ({ icon, title, content }) => (
@@ -154,6 +155,7 @@ function ServiceTools() {
                      </div>
                   </div>
                </div>
+               {/* <AnimatedSphere /> */}
             </div>
          </section>
       </>

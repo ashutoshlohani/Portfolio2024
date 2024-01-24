@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useScramble } from 'use-scramble';
+import stickyPaper from '../assets/reactPaper.png';
 
-const PROXIMITY_THRESHOLD = 333;
+const PROXIMITY_THRESHOLD = 350;
 
 const HeroText = React.memo(() => {
    const { ref, replay } = useScramble({
@@ -45,7 +46,15 @@ const HeroText = React.memo(() => {
 
    return (
       <>
-         <div className='leading-none flex flex-col items-left md:text-center'>
+         <div
+            className='leading-none flex flex-col items-left md:text-center'
+            // style={{ zIndex: 1000 }}
+         >
+            <img
+               src={stickyPaper}
+               className='relative right-[-75%] md:right-[-90%] top-[6rem] lg:top-[3rem] md:top-[2rem] w-[5rem] lg:w-[6rem] h-min drop-shadow-[5px_5px_5px_rgba(0,0,0,0.3)]'
+               style={{ zIndex: -1 }}
+            />
             <h1 className='font-semibold md:font-medium lg:font-normal text-[4rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem]'>
                {['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '\u00A0'].map((char, index) => (
                   <span key={index}>{char}</span>

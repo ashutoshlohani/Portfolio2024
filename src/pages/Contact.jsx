@@ -1,4 +1,5 @@
 import { FaFileDownload } from 'react-icons/fa';
+// import AnimatedSphere from '../components/anime/anime';
 
 function Contact() {
    const downloadPDF = () => {
@@ -24,18 +25,20 @@ function Contact() {
    return (
       <section
          id='contact'
-         className='bg-[#101010] text-light'
-         style={{
-            // background: 'linear-gradient(to bottom, #000000, #000000)',
-            background: 'linear-gradient(to bottom, #202020, #1C1E21)',
-         }}>
+         className='bg-[#1C1E21] text-light'
+         style={
+            {
+               // background: 'linear-gradient(to bottom, #000000, #000000)',
+               // background: 'linear-gradient(to bottom, #202020, #1C1E21)',
+            }
+         }>
          {/* <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
             <path fill='#000000' fillOpacity='1' d={svgPath}></path>
          </svg> */}
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[6rem]'>
             <div className='flex flex-wrap justify-between items-start md:gap-16'>
                <div className=' leading-tight'>
-                  <p className='text-[1.5rem] opacity-60 md:text-[2rem] lg:text-[3rem]'>
+                  <p className='text-[1.5rem] md:text-[2rem] lg:text-[3rem]'>
                      Have an awesome idea?
                   </p>
                   <p className='text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-medium'>

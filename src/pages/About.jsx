@@ -31,8 +31,6 @@ const About = () => (
          </div>
       </div>
 
-      {/* <hr className='mx-6 sm:mx-14 lg:mx-28 opacity-30' /> */}
-
       <div className='gap-10 flex flex-col sm:flex-row pb-[4rem] lg:pb-[4rem] lg:pt-[8rem] mx-6 sm:mx-14 lg:mx-28'>
          <div className='basis-1/2'>
             <h1 className='flex flex-row text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-none mb-8'>

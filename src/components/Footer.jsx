@@ -3,13 +3,14 @@ import { FaDribbble } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import byMe from '../assets/d&dbyme.svg';
+// import AnimatedSphere from './anime/anime';
 
 function Footer() {
    return (
       <section id='contact' className='bg-[#1C1E21] text-light'>
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[4rem]'>
             <div className='flex flex-wrap justify-between items-end'>
-               <div className='w-[30%] md:w-[25%] lg:w-[20%]'>
+               <div className='w-[30%] md:w-[25%] lg:w-[12%]'>
                   <img src={thankyouText} />
                </div>
                {/* <p>2024</p> */}
@@ -28,9 +29,11 @@ function Footer() {
                         <FaDribbble className='hover:text-[#E8538D]' />
                      </a>
                   </div>
-                  <img src={byMe} className='hidden sm:block w-[80%]' />
+                  <img src={byMe} className='hidden sm:block w-[75%]' />
                </div>
             </div>
+            {/* <AnimatedSphere /> */}
+
             <div className='mt-[5rem] mx-[4rem] sm:hidden'>
                <img src={byMe} />
             </div>

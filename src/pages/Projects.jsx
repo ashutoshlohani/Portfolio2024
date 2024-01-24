@@ -187,24 +187,21 @@ function Projects() {
 
          {isModalOpen && selectedProjectIndex !== null && (
             <div className='fixed inset-0 flex items-center justify-center'>
-               <div className='absolute inset-0 bg-black opacity-50'></div>
+               <div className='absolute inset-0 bg-black opacity-50' onClick={closeModal}></div>
 
                <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-light text-dark w-[90vw] h-[90vh] rounded-lg shadow-xl '>
-                  {/* <div className='fixed'>
-                     <button onClick={closeModal}>
-                        <TfiClose className='text-2xl' />
-                     </button>
-                  </div> */}
-
+                  <button
+                     className='absolute bg-dark text-light bg-opacity-80 text-xl cursor-pointer rounded-full p-2 top-[8%] right-[8%]'
+                     onClick={closeModal}>
+                     <TfiClose />
+                  </button>
                   <div className='flex flex-col md:flex-row'>
-                     <div className='flex basis-2/5 justify-center items-center'>
-                        <div className='flex justify-center h-full w-full'>
-                           <img
-                              src={projects[selectedProjectIndex].image}
-                              alt='Project Cover'
-                              className='object-cover h-full'
-                           />
-                        </div>
+                     <div className='flex basis-2/5 justify-center items-center w-full'>
+                        <img
+                           src={projects[selectedProjectIndex].image}
+                           alt='Cover Picture'
+                           className='object-cover h-full'
+                        />
                      </div>
 
                      <div className='basis-3/5 p-4 sm:p-10 sm:overflow-y-auto'>
@@ -228,9 +225,9 @@ function Projects() {
                               <div className='py-2'>
                                  <p className='font-semibold pb-1'>Description</p>
                                  <p>{projects[selectedProjectIndex].description}</p>
-                                 <p>{projects[selectedProjectIndex].description}</p>
                               </div>
                            </div>
+
                            <div className='flex flex-col justify-between items-start py-4'>
                               <div className='flex flex-wrap  gap-2 text-[0.6rem] sm:text-[1rem]'>
                                  {projects[selectedProjectIndex].technology.map(

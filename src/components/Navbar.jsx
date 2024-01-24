@@ -56,10 +56,6 @@ function Navbar() {
                   </div>
                </div>
 
-               <button className='md:hidden text-lg'>
-                  <a href='mailto:aashutosh.lohaani@gmail.com'>Mail💌</a>
-               </button>
-
                <div className='hidden w-full md:block md:w-auto'>
                   <ul className='flex gap-16 text-lg font-normal'>
                      {navLinks.map(link => (
@@ -71,6 +67,11 @@ function Navbar() {
                      ))}
                   </ul>
                </div>
+
+               <ul className='md:hidden text-lg'>
+                  {/* <a href='mailto:aashutosh.lohaani@gmail.com'>Mail💌</a> */}
+                  <a href='/contact'>Mail💌</a>
+               </ul>
             </div>
          </nav>
       </header>

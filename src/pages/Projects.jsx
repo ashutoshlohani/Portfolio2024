@@ -189,9 +189,9 @@ function Projects() {
             <div className='fixed inset-0 flex items-center justify-center'>
                <div className='absolute inset-0 bg-black opacity-50' onClick={closeModal}></div>
 
-               <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-light text-dark w-[90vw] h-[90vh] rounded-lg shadow-xl '>
+               <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-light text-dark w-[100vw] h-[100vh] rounded-lg shadow-xl'>
                   <button
-                     className='absolute bg-dark text-light bg-opacity-80 text-xl cursor-pointer rounded-full p-2 top-[8%] right-[8%]'
+                     className='absolute bg-dark text-light bg-opacity-80 text-xl cursor-pointer rounded-full p-2 top-8 right-8'
                      onClick={closeModal}>
                      <TfiClose />
                   </button>
@@ -204,10 +204,10 @@ function Projects() {
                         />
                      </div>
 
-                     <div className='basis-3/5 p-4 sm:p-10 sm:overflow-y-auto'>
+                     <div className='basis-3/5 p-8 sm:p-10 sm:overflow-y-auto'>
                         <div className='flex flex-col h-full justify-between'>
                            <div className='text-sm sm:text-base'>
-                              <p className='text-5xl sm:text-6xl'>
+                              <p className='text-5xl sm:text-7xl'>
                                  {projects[selectedProjectIndex].projectName}
                               </p>
                               {projectLinks(projects[selectedProjectIndex])}

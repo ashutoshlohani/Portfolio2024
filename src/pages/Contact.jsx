@@ -38,7 +38,7 @@ function Contact() {
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[6rem]'>
             <div className='flex flex-wrap justify-between items-start md:gap-16'>
                <div className=' leading-tight'>
-                  <p className='text-[1.5rem] md:text-[2rem] lg:text-[3rem]'>
+                  <p className='text-[1.5rem] md:text-[2rem] lg:text-[3rem] opacity-50'>
                      Have an awesome idea?
                   </p>
                   <p className='text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-medium'>
@@ -55,7 +55,7 @@ function Contact() {
                </button>
             </div>
 
-            <p className='text-[1rem] lg:text-[1.4rem] font-light md:my-[2rem] lg:w-[70%]'>
+            <p className='text-[1rem] lg:text-[1.4rem] font-light md:my-[2rem] lg:w-[50%]'>
                I am looking for freelance or full-time opportunities in startups, dev firms, and
                product base companies.
             </p>

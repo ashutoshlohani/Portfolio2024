@@ -17,8 +17,8 @@ import three from '../assets/threejs.svg';
 // eslint-disable-next-line react/prop-types
 const ServiceItem = ({ icon, title, content }) => (
    <div className='flex flex-col align-top mb-16 basis-1/2'>
-      {icon && React.cloneElement(icon, { className: 'text-[1.5rem] mb-2 opacity-40' })}
-      <p className='text-[1.2rem] xl:text-[1.6rem] font-medium mb-4'>{title}</p>
+      {icon && React.cloneElement(icon, { className: 'text-[1.8rem] mb-2 opacity-40' })}
+      <p className='text-[1.2rem] xl:text-[1.6rem] font-semibold mb-4'>{title}</p>
       <div className='text-base xl:text-[1.2rem] font-light opacity-60 leading-relaxed'>
          {content}
       </div>
@@ -49,20 +49,19 @@ function ServiceTools() {
       <>
          <section
             style={{
-               background: 'linear-gradient(to bottom, rgba(32, 32, 32, 0.95), #202020)',
+               background: 'linear-gradient(to bottom, rgba(28, 30, 33, 0.95), #1C1E21)',
             }}
             className='text-light'>
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-               <path fill='#202020' fillOpacity='1' d={svgPath}></path>
+               <path fill='#1C1E21' fillOpacity='1' d={svgPath}></path>
             </svg>
-            <div className='relative top-[-4rem] sm:top-[-7rem] md:top-[-8rem] lg:top-[-10rem] xl:top-[-15rem]'>
-               <h1 className=' text-dark text-[6rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden'>
+            <div className='relative top-[-3rem] sm:top-[-5rem] md:top-[-6rem] lg:top-[-7rem] xl:top-[-10rem]'>
+               <h1 className=' text-dark text-[6rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden leading-none'>
                   Toolbox
                </h1>
-               <p className='text-[1.5rem] lg:text-[3rem] leading-tight mx-6 sm:mx-14 lg:mx-28 mb-20'>
+               <p className='text-[1.5rem] lg:text-[3rem] leading-tight font-light mx-6 sm:mx-14 lg:mx-28 mb-20'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
-                  {`Here's how can `}
-                  {`I help you :)`}
+                  {`How can I help you  : )`}
                </p>
 
                <div className='flex flex-col xl:flex-row align-top mx-6 sm:mx-14 lg:mx-28'>
@@ -116,10 +115,12 @@ function ServiceTools() {
                   </div>
                </div>
 
-               <div className='mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[8rem]'>
+               <div className='mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[4rem]'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
-                  <p className='text-[1.5rem] xl:text-[1.6rem] font-light'>
-                     My go to tech stack to make any projects happen.
+                  <p className='text-[1.5rem] xl:text-[3rem] font-light leading-tight'>
+                     My go to tech stack to
+                     <br />
+                     make any projects happen.
                   </p>
                   <div className='flex flex-col sm:flex-row mt-[5rem] gap-6 lg:gap-[3rem] xl:gap-[4rem]'>
                      <div className='flex justify-between basis-1/2'>

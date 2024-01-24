@@ -9,7 +9,7 @@ const About = () => (
             <div className='text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem]'>
                {`ヽ(•‿•)`} <p className='waving-hand'>{`ﾉ`}</p>
             </div>
-            <h1 className='text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-tight mt-4 mb-8 lg:my-8 xl:mb-14 xl:mt-8'>
+            <h1 className='text-[2.5rem] lg:text-5xl xl:text-[5rem] leading-tight xl:leading-[1.15] mt-4 mb-8 lg:my-8 xl:mb-14 xl:mt-8'>
                {`Hi, I'm Aashu`}
                <br />
                {`Nice To Meet You.`}

@@ -119,20 +119,9 @@ function Projects() {
       }
    };
 
-   const svgPath =
-      'M0,96L120,133.3C240,171,480,245,720,245.3C960,245,1200,171,1320,133.3L1440,96L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z';
-
    return (
-      <section
-         id='projects'
-         className='bg-dark text-light'
-         style={{
-            background: 'linear-gradient(to top, #202020, #101010)',
-         }}>
-         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320' className='sm:hidden'>
-            <path fill='#202020' fillOpacity='1' d={svgPath}></path>
-         </svg>
-         <div className='mx-6 sm:mx-14 lg:mx-28 pt-[1rem]'>
+      <section id='projects' className='bg-dark text-light'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 pt-[4rem]'>
             <div className='flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-16 gap-10'>
                <div className='text-[3rem] lg:text-[5rem] leading-none'>
                   <GoArrowDownRight className='text-[2rem] mb-2 hidden sm:block' />
@@ -156,7 +145,7 @@ function Projects() {
                         className='cursor-pointer h-fit rounded text-light bg-cover bg-center bg-no-repeat my-8 sm:my-4 mx-0 sm:mx-4 '
                         style={{ backgroundImage: `url(${project.image})` }}>
                         <div className='bg-black bg-opacity-50 hover:bg-opacity-65 rounded flex flex-col justify-between'>
-                           <div className='flex flex-col justify-center items-center gap-2 py-[4rem] xl:py-[8rem]'>
+                           <div className='flex flex-col justify-center items-center py-[4rem] xl:py-[8rem]'>
                               <PiEyeClosedLight className='text-[2rem]' />
                            </div>
 
@@ -164,7 +153,7 @@ function Projects() {
                               <p className='text-[2.5rem] lg:text-[3rem] font-bold my-4'>
                                  {project.projectName}
                               </p>
-                              <p className='line-clamp-2 text-[0.9rem] sm:text-[1rem] font-light lg:font-normal mb-4 opacity-90'>
+                              <p className='line-clamp-2 text-[0.9rem] sm:text-[1rem] font-light lg:font-normal mb-4 opacity-90 w-[90%]'>
                                  {project.description}
                               </p>
 

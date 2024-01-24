@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useScramble } from 'use-scramble';
 import stickyPaper from '../assets/reactPaper.png';
 
-const PROXIMITY_THRESHOLD = 350;
+const PROXIMITY_THRESHOLD = 320;
 
 const HeroText = React.memo(() => {
    const { ref, replay } = useScramble({

@@ -55,13 +55,13 @@ function ServiceTools() {
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
                <path fill='#1C1E21' fillOpacity='1' d={svgPath}></path>
             </svg>
-            <div className='relative top-[-3rem] sm:top-[-5rem] md:top-[-6rem] lg:top-[-7rem] xl:top-[-10rem]'>
-               <h1 className=' text-dark text-[6rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden leading-none'>
+            <div className='relative top-[-2.2rem] sm:top-[-5rem] md:top-[-6rem] lg:top-[-7rem] xl:top-[-10rem]'>
+               <h1 className=' text-dark text-[6.5rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden leading-none'>
                   Toolbox
                </h1>
-               <p className='text-[1.5rem] lg:text-[3rem] leading-tight font-light mx-6 sm:mx-14 lg:mx-28 mb-20'>
-                  <GoArrowDownRight className='text-[1.5rem] mb-2' />
-                  {`How can I help you  : )`}
+               <p className='text-[1.5rem] lg:text-[3rem] leading- font-light mx-6 sm:mx-14 lg:mx-28 mb-10 mt-4'>
+                  <GoArrowDownRight className='text-[1.5rem] my-2' />
+                  {`How can I help you : )`}
                </p>
 
                <div className='flex flex-col xl:flex-row align-top mx-6 sm:mx-14 lg:mx-28'>

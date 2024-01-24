@@ -8,7 +8,7 @@ function Footer() {
    return (
       <section id='contact' className='bg-[#1C1E21] text-light'>
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[2rem] sm:py-[4rem]'>
-            <div className='flex flex-wrap justify-between items-end'>
+            <div className='flex flex-wrap justify-between items-end mt-8'>
                <div className='w-[30%] md:w-[25%] lg:w-[12%]'>
                   <img src={thankyouText} />
                </div>

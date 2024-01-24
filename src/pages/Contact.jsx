@@ -60,7 +60,7 @@ function Contact() {
                product base companies.
             </p>
 
-            <hr className='mt-[4rem] lg:mt-[10rem]' />
+            <hr className='mt-[5rem] lg:mt-[10rem]' />
             <p className='text-center text-[1.4rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.8rem] xl:text-[6rem] overflow-hidden py-2'>
                <a href='mailto:aashutosh.lohaani@gmail.com'>aashutosh.lohaani@gmail.com</a>
             </p>

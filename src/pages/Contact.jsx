@@ -23,7 +23,7 @@ function Contact() {
 
    return (
       <section id='contact' className='bg-dark text-light'>
-         <div className='mx-6 sm:mx-14 lg:mx-28 py-[6rem]'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 py-[4rem]'>
             <div className='flex flex-wrap justify-between items-start md:gap-16'>
                <div className=' leading-none'>
                   <p className='text-[1.5rem] md:text-[2rem] lg:text-[3rem] py-4 text-secondary-foreground'>
@@ -53,11 +53,16 @@ function Contact() {
                focus on product innovation.
             </p>
 
-            <hr className='mt-[5rem] lg:mt-[10rem]' />
-            <p className='text-center text-[1.4rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[5.5rem] overflow-hidden py-4'>
-               <a href='mailto:aashutosh.lohaani@gmail.com'>aashutosh.lohaani@gmail.com</a>
-            </p>
-            <hr />
+            <div className='py-[5rem]'>
+               <hr className='hidden sm:block' />
+               <p className='text-center text-[1.2rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[5.5rem] overflow-hidden py-4 border sm:border-none rounded-full'>
+                  <a href='mailto:aashutosh.lohaani@gmail.com'>aashutosh.lohaani@gmail.com</a>
+               </p>
+               <p className='sm:hidden mt-4 text-center text-[1.2rem] overflow-hidden py-4 border rounded-full'>
+                  <a href='mailto:aashutosh.lohaani@gmail.com'>+91 89549 91441</a>
+               </p>
+               <hr className='hidden sm:block' />
+            </div>
          </div>
       </section>
    );

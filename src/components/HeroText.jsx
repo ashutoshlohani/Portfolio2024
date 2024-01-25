@@ -28,7 +28,7 @@ const HeroText = React.memo(() => {
 
          const distance = Math.sqrt((mouseX - spanX) ** 2 + (mouseY - spanY) ** 2);
 
-         const maxDistance = Math.min(window.innerWidth, window.innerHeight) / 2;
+         const maxDistance = Math.min(window.innerWidth, window.innerHeight) / 2.5;
          const fontWeight =
             100 + (800 / maxDistance) * (maxDistance - Math.min(distance, PROXIMITY_THRESHOLD));
 

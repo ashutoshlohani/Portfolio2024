@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { BsCodeSlash } from 'react-icons/bs';
+import { MagneticButton } from './magnetic';
 
 function Navbar() {
    useEffect(() => {
@@ -57,13 +58,13 @@ function Navbar() {
                </div>
 
                <div className='hidden w-full md:block md:w-auto'>
-                  <ul className='flex gap-16 text-lg font-normal'>
+                  <ul className='flex gap-16'>
                      {navLinks.map(link => (
-                        <li key={link.href}>
-                           <a href={link.href} className='hover:underline'>
-                              {link.text}
-                           </a>
-                        </li>
+                        <MagneticButton
+                           key={link.href}
+                           className='text-lg font-normal hover:font-medium'>
+                           <a href={link.href}>{link.text}</a>
+                        </MagneticButton>
                      ))}
                   </ul>
                </div>

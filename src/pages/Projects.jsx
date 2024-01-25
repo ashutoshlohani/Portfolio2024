@@ -8,6 +8,7 @@ import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 import project4 from '../assets/project4.png';
+import { MagneticButton } from '../components/magnetic';
 
 const projects = [
    {
@@ -60,20 +61,24 @@ function projectLinks(project) {
    return (
       <div className='flex text-base sm:text-lg font-normal py-4 sm:py-8 gap-8'>
          {!project.liveLink && (
-            <a href={project.liveLink} target='_blank' rel='noreferrer'>
-               <p className='flex items-center gap-2'>
-                  <GoProjectSymlink />
-                  View live
-               </p>
-            </a>
+            <MagneticButton>
+               <a href={project.liveLink} target='_blank' rel='noreferrer'>
+                  <p className='flex items-center gap-2'>
+                     <GoProjectSymlink />
+                     View live
+                  </p>
+               </a>
+            </MagneticButton>
          )}
          {!project.sourceCode && (
-            <a href={project.sourceCode} target='_blank' rel='noreferrer'>
-               <p className='flex items-center gap-2'>
-                  <IoIosGitBranch />
-                  Source code
-               </p>
-            </a>
+            <MagneticButton>
+               <a href={project.sourceCode} target='_blank' rel='noreferrer'>
+                  <p className='flex items-center gap-2'>
+                     <IoIosGitBranch />
+                     Source code
+                  </p>
+               </a>
+            </MagneticButton>
          )}
       </div>
    );
@@ -179,11 +184,12 @@ function Projects() {
                <div className='absolute inset-0 bg-black opacity-50' onClick={closeModal}></div>
 
                <div className='overflow-y-auto md:overflow-hidden flex flex-col md:flex-row z-50 bg-light text-dark w-[100vw] h-[100vh] rounded-lg shadow-xl'>
-                  <button
-                     className='absolute bg-dark text-light bg-opacity-80 text-xl cursor-pointer rounded-full p-2 top-8 right-8'
+                  <MagneticButton
+                     variant='ghost'
+                     className='absolute text-xl cursor-pointer rounded-full p-3 top-8 right-8'
                      onClick={closeModal}>
                      <TfiClose />
-                  </button>
+                  </MagneticButton>
                   <div className='flex flex-col md:flex-row'>
                      <div className='flex basis-2/5 justify-center items-center w-full'>
                         <img
@@ -230,13 +236,13 @@ function Projects() {
                                  )}
                               </div>
                               <div className='flex gap-4 pt-8 lg:pt-0 w-full justify-center sm:justify-end'>
-                                 <button onClick={previous}>
+                                 <MagneticButton onClick={previous}>
                                     <SlArrowLeft />
-                                 </button>
+                                 </MagneticButton>
                                  {selectedProjectIndex + 1} / {projects.length}
-                                 <button onClick={next}>
+                                 <MagneticButton onClick={next}>
                                     <SlArrowRight />
-                                 </button>
+                                 </MagneticButton>
                               </div>
                            </div>
                         </div>

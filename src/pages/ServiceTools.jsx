@@ -115,7 +115,7 @@ function ServiceTools() {
                   </div>
                </div>
 
-               <div className='mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[4rem]'>
+               <div className='mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[8rem]'>
                   <GoArrowDownRight className='text-[1.5rem] mb-2' />
                   <p className='text-[1.5rem] xl:text-[3rem] font-light leading-tight'>
                      My go to tech stack to

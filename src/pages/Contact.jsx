@@ -59,7 +59,7 @@ function Contact() {
                   <a href='mailto:aashutosh.lohaani@gmail.com'>aashutosh.lohaani@gmail.com</a>
                </p>
                <p className='sm:hidden mt-4 text-center text-[1.2rem] overflow-hidden py-4 border rounded-full'>
-                  <a href='mailto:aashutosh.lohaani@gmail.com'>+91 89549 91441</a>
+                  <a href='tel:+918954991441'>+91 89549 91441</a>
                </p>
                <hr className='hidden sm:block' />
             </div>

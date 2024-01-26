@@ -23,7 +23,7 @@ function Contact() {
 
    return (
       <section id='contact' className='bg-dark text-light'>
-         <div className='mx-6 sm:mx-14 lg:mx-28 py-[4rem]'>
+         <div className='mx-6 sm:mx-14 lg:mx-28 py-[8rem]'>
             <div className='flex flex-wrap justify-between items-start md:gap-16'>
                <div className=' leading-none'>
                   <p className='text-[1.5rem] md:text-[2rem] lg:text-[3rem] py-4 text-secondary-foreground'>
@@ -36,10 +36,11 @@ function Contact() {
 
                <MagneticButton
                   onClick={downloadPDF}
-                  type='button'
                   variant='primary'
                   size='lg'
-                  className='font-normal text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] px-8 py-4 text-center inline-flex items-center font-mono me-2 mt-[2.5rem] mb-[1rem] sm:my-0'>
+                  className='font-normal text-[1rem] md:text-[1.2rem] lg:text-[1.3rem] px-8 py-4 text-center inline-flex items-center font-mono me-2 mt-[2.5rem] mb-[1rem] sm:my-0'
+                  type='button'
+                  aria-label='Download Resume'>
                   <span className='flex justify-center items-center'>
                      <FaFileDownload className='me-2' />
                      Resume
@@ -55,8 +56,12 @@ function Contact() {
 
             <div className='py-[5rem]'>
                <hr className='hidden sm:block' />
-               <p className='text-center text-[1.2rem] sm:text-[2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[5.5rem] overflow-hidden py-4 border sm:border-none rounded-full'>
-                  <a href='mailto:aashutosh.lohaani@gmail.com'>aashutosh.lohaani@gmail.com</a>
+               <p className='text-center text-[1.2rem] sm:text-[1.5rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[5rem] overflow- py-4 border sm:border-none rounded-full sm:rounded-none hover:scale-95 transition'>
+                  <a
+                     href='mailto:aashutosh.lohaani@gmail.com'
+                     className='emoji-cursor sm:uppercase'>
+                     ashulohani97@outlook.com
+                  </a>
                </p>
                <p className='sm:hidden mt-4 text-center text-[1.2rem] overflow-hidden py-4 border rounded-full'>
                   <a href='tel:+918954991441'>+91 89549 91441</a>

@@ -11,7 +11,7 @@ function Navbar() {
 
          if (targetElement) {
             window.scrollTo({
-               top: targetElement.offsetTop,
+               top: targetElement.offsetTop + 50,
                behavior: 'smooth',
             });
          }
@@ -62,17 +62,17 @@ function Navbar() {
                      {navLinks.map(link => (
                         <MagneticButton
                            key={link.href}
-                           className='text-lg font-normal hover:font-medium'>
+                           className='text-lg font-normal hover:font-medium hover:underline decoration-wavy underline-offset-8 overflow-visible decoration-destructive'>
                            <a href={link.href}>{link.text}</a>
                         </MagneticButton>
                      ))}
                   </ul>
                </div>
 
-               <ul className='md:hidden text-lg'>
+               <div className='md:hidden text-lg'>
                   {/* <a href='mailto:aashutosh.lohaani@gmail.com'>Mail💌</a> */}
-                  <a href='/contact'>Mail💌</a>
-               </ul>
+                  <a href='/contact'>Mail</a>
+               </div>
             </div>
          </nav>
       </header>

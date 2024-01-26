@@ -26,7 +26,7 @@ const projects = [
       projectName: 'InnerScore',
       description:
          'An online shopping platform developed using MERN stack (React, Node.js, MongoDB). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      technology: ['React', 'Node.js', 'MongoDB', 'CSS'],
+      technology: ['React', 'Node.js', 'MongoDB'],
       image: project2,
       role: 'Backend Developer',
       duration: '2 months',
@@ -133,23 +133,25 @@ function Projects() {
                   Projects
                </div>
                <div className='flex flex-col items-end opacity-70'>
-                  <p className='text-[1rem] lg:text-[1.2rem] text-right'>
+                  <p className='text-[0.8rem] sm:text-[1rem] text-right font-mono'>
                      Code is like humor. when you
                      <br></br>
                      “have” to explain it, it’s bad.
                   </p>
-                  <p className='text-[0.8rem] lg:text-[1rem] font-extralight'>-Cory House</p>
+                  <p className='text-[0.6rem] sm:text-[0.8rem] font-extralight font-mono'>
+                     -Cory House
+                  </p>
                </div>
             </div>
 
-            <div className='flex flex-wrap py-[4rem] lg:py-[8rem]'>
+            <div className='flex flex-wrap py-[2rem] xl:py-[8rem]'>
                {projects.map((project, index) => (
                   <div key={index} className='w-full sm:w-1/2'>
                      <div
                         onClick={() => openModal(index)}
-                        className='cursor-pointer h-fit rounded text-light bg-cover bg-center bg-no-repeat my-8 sm:my-4 mx-0 sm:mx-4 '
+                        className='zoom-image cursor-pointer h-fit rounded text-light bg-cover bg-center bg-no-repeat my-8 sm:my-4 mx-0 sm:mx-4 '
                         style={{ backgroundImage: `url(${project.image})` }}>
-                        <div className='bg-black bg-opacity-50 hover:bg-opacity-65 rounded flex flex-col justify-between'>
+                        <div className='bg-black bg-opacity-50 transition-all hover:bg-opacity-65 rounded flex flex-col justify-between'>
                            <div className='flex flex-col justify-center items-center py-[4rem] xl:py-[8rem]'>
                               <PiEyeClosedLight className='text-[2rem]' />
                            </div>

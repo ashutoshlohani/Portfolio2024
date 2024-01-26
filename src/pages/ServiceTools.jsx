@@ -122,16 +122,16 @@ function ServiceTools() {
                      <br />
                      make any projects happen.
                   </p>
-                  <div className='flex flex-col sm:flex-row mt-[5rem] gap-6 lg:gap-[3rem] xl:gap-[4rem]'>
+                  <div className='flex flex-col sm:flex-row mt-[6rem] gap-6 lg:gap-[3rem] xl:gap-[4rem]'>
                      <div className='flex justify-between basis-1/2'>
                         {techStackImagesOne.map(({ name, image }, index) => (
                            <div className='flex flex-col justify-between items-center' key={index}>
                               <img
                                  src={image}
                                  alt={name}
-                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
                               />
-                              <p className='text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-50'>
+                              <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-6 font-light opacity-60'>
                                  {name}
                               </p>
                            </div>
@@ -144,9 +144,9 @@ function ServiceTools() {
                               <img
                                  src={image}
                                  alt={name}
-                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
                               />
-                              <p className='text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-50'>
+                              <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-60'>
                                  {name}
                               </p>
                            </div>

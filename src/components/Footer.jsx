@@ -10,7 +10,7 @@ function Footer() {
       <section id='contact' className='bg-[#1C1E21] text-light'>
          <div className='mx-6 sm:mx-14 lg:mx-28 py-[2rem]'>
             <div className='flex flex-wrap justify-between items-end mt-8'>
-               <div className='w-[30%] md:w-[25%] lg:w-[15%]' style={{ position: 'relative' }}>
+               <div className='w-[30%] md:w-[25%] lg:w-[15%] p-2' style={{ position: 'relative' }}>
                   <img
                      src={thankyouText}
                      alt='version year'

@@ -17,6 +17,18 @@ function App() {
 
    const options = {
       smooth: true,
+      mobile: {
+         smooth: true,
+         breakpoint: 0,
+         inertia: 0.8,
+         getDirection: true,
+      },
+      tablet: {
+         smooth: true,
+         breakpoint: 0,
+         inertia: 0.8,
+         getDirection: true,
+      },
    };
 
    const [isLoading, setLoading] = useState(true);

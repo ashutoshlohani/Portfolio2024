@@ -1,23 +1,24 @@
 import React from 'react';
-import { AiOutlineApi } from 'react-icons/ai';
-import { CgWebsite } from 'react-icons/cg';
-import { GoArrowDownRight } from 'react-icons/go';
-import { MdDesignServices, MdOutlineTune } from 'react-icons/md';
-import figma from '../assets/figma.svg';
-import firebase from '../assets/firebase.svg';
-import git from '../assets/git-icon.svg';
-import javascript from '../assets/javascript.svg';
-import next from '../assets/nextjs-icon.svg';
-import react from '../assets/react.svg';
-import redux from '../assets/redux.svg';
-import sass from '../assets/sass.svg';
-import tailwind from '../assets/tailwindcss-icon.svg';
-import three from '../assets/threejs.svg';
+import api from '../assets/icons/api.svg';
+import design from '../assets/icons/design.svg';
+import down from '../assets/icons/down.svg';
+import tune from '../assets/icons/tune.svg';
+import website from '../assets/icons/website.svg';
+import figma from '../assets/techIcons/figma.svg';
+import firebase from '../assets/techIcons/firebase.svg';
+import git from '../assets/techIcons/git-icon.svg';
+import javascript from '../assets/techIcons/javascript.svg';
+import next from '../assets/techIcons/nextjs-icon.svg';
+import react from '../assets/techIcons/react.svg';
+import redux from '../assets/techIcons/redux.svg';
+import sass from '../assets/techIcons/sass.svg';
+import tailwind from '../assets/techIcons/tailwindcss-icon.svg';
+import three from '../assets/techIcons/threejs.svg';
 
 // eslint-disable-next-line react/prop-types
 const ServiceItem = ({ icon, title, content }) => (
    <div className='flex flex-col align-top mb-16 basis-1/2'>
-      {icon && React.cloneElement(icon, { className: 'text-[1.8rem] mb-2 opacity-40' })}
+      {icon && React.cloneElement(icon, { className: 'h-6 w-6 mb-4 opacity-40' })}
       <p className='text-[1.2rem] xl:text-[1.6rem] font-semibold mb-4'>{title}</p>
       <div className='text-base xl:text-[1.2rem] font-light opacity-60 leading-relaxed'>
          {content}
@@ -48,26 +49,37 @@ function ServiceTools() {
    return (
       <>
          <section
-            style={{
-               background: 'linear-gradient(to bottom, rgba(28, 30, 33, 0.95), #1C1E21)',
-            }}
-            className='text-light'>
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+            // style={{
+            //    background: 'linear-gradient(to bottom, rgba(28, 30, 33, 0.95), #1C1E21)',
+            // }}
+            className='text-light bg-dark'>
+            <svg
+               className='block sm:hidden'
+               xmlns='http://www.w3.org/2000/svg'
+               viewBox='0 0 1440 320'>
                <path fill='#1C1E21' fillOpacity='1' d={svgPath}></path>
             </svg>
-            <div className='relative top-[-2.3rem] sm:top-[-5rem] md:top-[-6rem] lg:top-[-7rem] xl:top-[-10rem]'>
-               <h1 className=' text-dark text-[6.5rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[22rem] font-black md:font-bold flex text-center justify-center overflow-hidden leading-none'>
-                  Toolbox
+            <div className='relative top-[-2.3rem] sm:top-[-5rem] md:top-[-6rem] lg:top-[-7rem] xl:top-[-4rem]'>
+               <h1
+                  data-scroll
+                  data-scroll-direction='horizontal'
+                  data-scroll-speed='4'
+                  className='text-light opacity-10 text-[6.5rem] sm:text-[10rem] md:text-[12rem] lg:text-[14rem] xl:text-[18rem] font-black md:font-bold flex text-center justify-center leading-none'>
+                  TOOLBOX
                </h1>
-               <p className='text-[1.5rem] lg:text-[3rem] leading- font-light mx-6 sm:mx-14 lg:mx-28 mb-10 mt-4'>
-                  <GoArrowDownRight className='text-[1.5rem] my-2' />
+               <p className='text-[1.5rem] lg:text-[3rem] leading- font-light mx-6 sm:mx-14 lg:mx-28 mb-16 mt-[6rem]'>
+                  <img src={down} className='my-2 opacity-25' />
                   {`How can I help you : )`}
                </p>
 
-               <div className='flex flex-col xl:flex-row align-top mx-6 sm:mx-14 lg:mx-28'>
+               <div
+                  data-scroll
+                  data-scroll-class='fadeIn'
+                  data-scroll-repeat='true'
+                  className='op-class flex flex-col xl:flex-row align-top mx-6 sm:mx-14 lg:mx-28'>
                   <div className='flex basis-1/2 flex-col md:flex-row sm:gap-8'>
                      <ServiceItem
-                        icon={<CgWebsite />}
+                        icon={<img src={website} />}
                         title='Website Creation and Enhancement'
                         content={
                            <>
@@ -79,7 +91,7 @@ function ServiceTools() {
                      />
 
                      <ServiceItem
-                        icon={<MdDesignServices />}
+                        icon={<img src={design} />}
                         title='UI/UX Design'
                         content={
                            <>
@@ -93,7 +105,7 @@ function ServiceTools() {
                   </div>
                   <div className='flex basis-1/2 flex-col md:flex-row sm:gap-8'>
                      <ServiceItem
-                        icon={<AiOutlineApi />}
+                        icon={<img src={api} />}
                         title='Integration Services'
                         content={
                            <>
@@ -104,7 +116,7 @@ function ServiceTools() {
                      />
 
                      <ServiceItem
-                        icon={<MdOutlineTune />}
+                        icon={<img src={tune} />}
                         title='Performance Optimization'
                         content={
                            <>
@@ -115,21 +127,27 @@ function ServiceTools() {
                   </div>
                </div>
 
-               <div className='mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[8rem]'>
-                  <GoArrowDownRight className='text-[1.5rem] mb-2' />
+               <div
+                  data-scroll
+                  data-scroll-direction='vertical'
+                  data-scroll-speed='1'
+                  data-scroll-repeat='true'
+                  data-scroll-class='fadeIn'
+                  className=' op-class mx-6 sm:mx-14 lg:mx-28 mt-[2rem] xl:mt-[8rem] xl:pb-[8rem]'>
+                  <img src={down} className='my-2 opacity-25' />
                   <p className='text-[1.5rem] xl:text-[3rem] font-light leading-tight'>
                      My go to tech stack to
                      <br />
                      make any projects happen.
                   </p>
-                  <div className='flex flex-col sm:flex-row mt-[6rem] gap-6 lg:gap-[3rem] xl:gap-[4rem]'>
+                  <div className='flex flex-col sm:flex-row my-[6rem] gap-6 lg:gap-[3rem] xl:gap-[4rem]'>
                      <div className='flex justify-between basis-1/2'>
                         {techStackImagesOne.map(({ name, image }, index) => (
                            <div className='flex flex-col justify-between items-center' key={index}>
                               <img
                                  src={image}
                                  alt={name}
-                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
+                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] '
                               />
                               <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-6 font-light opacity-60'>
                                  {name}
@@ -144,7 +162,7 @@ function ServiceTools() {
                               <img
                                  src={image}
                                  alt={name}
-                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] grayscale hover:grayscale-0'
+                                 className='w-[2.5rem] h-[2.5rem] lg:w-[3rem] lg:h-[3rem] xl:w-[4rem] xl:h-[4rem] '
                               />
                               <p className='hidden sm:block text-[0.6rem] xl:text-[0.8rem] mt-3 xl:mt-5 font-light opacity-60'>
                                  {name}

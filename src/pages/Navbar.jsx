@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { BsCodeSlash } from 'react-icons/bs';
-import { MagneticButton } from './magnetic';
+import code from '../assets/icons/code.svg';
+import { MagneticButton } from '../components/button';
 
 function Navbar() {
    useEffect(() => {
@@ -36,12 +36,12 @@ function Navbar() {
    ];
 
    return (
-      <header>
-         <nav className='mx-6 sm:mx-14 lg:mx-16'>
-            <div className='flex flex-wrap items-center justify-between mt-8'>
+      <header className='bg-light'>
+         <nav className='mx-6 sm:mx-14 lg:mx-28 '>
+            <div className='flex flex-wrap items-center justify-between pt-8'>
                <div className='group flex cursor-pointer font-normal text-lg items-center'>
                   <div className='transition-transform duration-500 ease-in-expo group-hover:rotate-[360deg]'>
-                     <BsCodeSlash />
+                     <img src={code} />
                   </div>
 
                   <div className='relative ms-2 flex overflow-hidden whitespace-nowrap transition-all duration-500 ease-in-expo group-hover:pe-8'>
@@ -62,7 +62,7 @@ function Navbar() {
                      {navLinks.map(link => (
                         <MagneticButton
                            key={link.href}
-                           className='text-lg font-normal hover:font-medium hover:underline decoration-wavy underline-offset-8 overflow-visible decoration-destructive'>
+                           className='text-lg font-normal hover:font-medium'>
                            <a href={link.href}>{link.text}</a>
                         </MagneticButton>
                      ))}
@@ -71,7 +71,7 @@ function Navbar() {
 
                <div className='md:hidden text-lg'>
                   {/* <a href='mailto:aashutosh.lohaani@gmail.com'>Mail💌</a> */}
-                  <a href='/contact'>Mail</a>
+                  <a href='/contact'>✉️</a>
                </div>
             </div>
          </nav>

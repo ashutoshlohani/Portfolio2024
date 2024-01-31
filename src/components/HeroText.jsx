@@ -160,7 +160,7 @@
 // export default HeroText;
 
 import React, { useEffect, useRef } from 'react';
-import stickyPaper from '../assets/reactPaper.png';
+// import stickyPaper from '../assets/reactPaper.png';
 import throttle from 'lodash/throttle';
 import { useScramble } from 'use-scramble';
 
@@ -213,13 +213,13 @@ const HeroText = React.memo(() => {
 
    return (
       <>
-         <div className='leading-none flex flex-col items-left md:text-center'>
-            <img
+         <div className='leading-none sm:leading-[5rem] flex flex-col items-left md:text-cente'>
+            {/* <img
                src={stickyPaper}
                alt='react js badge'
-               className='relative right-[-75%] md:right-[-90%] top-[6rem] lg:top-[3rem] md:top-[2rem] w-[5rem] lg:w-[6rem] h-min drop-shadow-[5px_5px_5px_rgba(0,0,0,0.3)]'
+               className='relative right-[-75%] md:right-[-95%] top-[6rem] lg:top-[2.5rem] md:top-[2rem] w-[5rem] lg:w-[6rem] h-min drop-shadow-[5px_5px_5px_rgba(0,0,0,0.3)]'
                style={{ zIndex: -1 }}
-            />
+            /> */}
 
             <div className='font-semibold md:font-medium lg:font-normal text-[4rem] md:text-[4rem] lg:text-[5rem] xl:text-[6.9rem]'>
                {['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', '\u00A0'].map((char, index) => (

@@ -1,9 +1,9 @@
-import thankyouText from '../assets/thankyouText.svg';
-import { FaDribbble } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
 import byMe from '../assets/d&dbyme.svg';
-import { MagneticButton } from './magnetic';
+import dribbble from '../assets/icons/dribbble.svg';
+import github from '../assets/icons/github.svg';
+import linkedin from '../assets/icons/linkedIn.svg';
+import thankyouText from '../assets/thankyouText.svg';
+import { MagneticButton } from '../components/button';
 
 function Footer() {
    return (
@@ -40,7 +40,7 @@ function Footer() {
                            target='_blank'
                            rel='noreferrer'
                            aria-label='LinkedIn'>
-                           <FaLinkedin />
+                           <img src={linkedin} className='h-10' />
                         </a>
                      </MagneticButton>
                      <MagneticButton className='text-[1.8rem] sm:text-[2.5rem]'>
@@ -49,7 +49,7 @@ function Footer() {
                            target='_blank'
                            rel='noreferrer'
                            aria-label='Github'>
-                           <FaGithub />
+                           <img src={github} className='h-10' />
                         </a>
                      </MagneticButton>
                      <MagneticButton className='text-[1.8rem] sm:text-[2.5rem]'>
@@ -58,7 +58,7 @@ function Footer() {
                            target='_blank'
                            rel='noreferrer'
                            aria-label='Dribbble'>
-                           <FaDribbble />
+                           <img src={dribbble} className='h-10' />
                         </a>
                      </MagneticButton>
                   </div>

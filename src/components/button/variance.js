@@ -16,8 +16,8 @@ export const magneticVariance = cva(
             outline: 'border border-solid before:bg-primary after:bg-primary',
          },
          size: {
-            default: 'p-1',
-            md: 'px-8 py-4',
+            default: 'p-2 text-sm',
+            md: 'px-8 py-10 text-base',
             lg: 'px-8 py-16 text-lg lg:px-12 lg:py-20',
             xl: 'px-10 py-16 text-lg lg:px-14 lg:py-20',
          },
